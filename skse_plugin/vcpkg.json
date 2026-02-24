@@ -1,0 +1,23 @@
+{
+    "name": "CCWAnimFramework",
+    "version-semver": "1.0.0",
+    "dependencies": [],
+    "builtin-baseline": "c82f74667287d3dc386bce81e44964370c91a289",
+    "vcpkg-configuration": {
+        "default-registry": {
+            "kind": "git",
+            "repository": "https://github.com/microsoft/vcpkg",
+            "baseline": "c82f74667287d3dc386bce81e44964370c91a289"
+        },
+        "registries": [
+            {
+                "kind": "git",
+                "repository": "https://github.com/Exit-9B/CommonLibSSE-NG",
+                "baseline": "main",
+                "packages": [
+                    "commonlibsse-ng"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "_comment": "Elden Ring → XP32 XPMSSE Bone Mapping for Skeleton Retargeting",
+    "_info": "Maps Elden Ring (FromSoftware) bone names to Skyrim SE XP32 XPMSSE bone names",
+    "_note": "Some Elden Ring bones have no direct equivalent and use fallback/parent mapping",
+    "version": "1.0.0",
+    "source_skeleton": "Elden Ring c0000 (Player Character)",
+    "target_skeleton": "XP32 Maximum Skeleton Special Extended (XPMSSE) 4.80+",
+    "core_bones": {
+        "_comment": "Primary skeletal structure - 1:1 mappings where possible",
+        "Master": "NPC Root [Root]",
+        "Pelvis": "NPC Pelvis [Pelv]",
+        "Spine_1": "NPC Spine [Spn0]",
+        "Spine_2": "NPC Spine1 [Spn1]",
+        "Spine_3": "NPC Spine2 [Spn2]",
+        "Neck": "NPC Neck [Neck]",
+        "Head": "NPC Head [Head]",
+        "L_Clavicle": "NPC L Clavicle [LClv]",
+        "L_UpperArm": "NPC L UpperArm [LUar]",
+        "L_Forearm": "NPC L Forearm [LLar]",
+        "L_Hand": "NPC L Hand [LHnd]",
+        "R_Clavicle": "NPC R Clavicle [RClv]",
+        "R_UpperArm": "NPC R UpperArm [RUar]",
+        "R_Forearm": "NPC R Forearm [RLar]",
+        "R_Hand": "NPC R Hand [RHnd]",
+        "L_Thigh": "NPC L Thigh [LThg]",
+        "L_Calf": "NPC L Calf [LClf]",
+        "L_Foot": "NPC L Foot [LFt ]",
+        "L_Toe0": "NPC L Toe0 [LToe]",
+        "R_Thigh": "NPC R Thigh [RThg]",
+        "R_Calf": "NPC R Calf [RClf]",
+        "R_Foot": "NPC R Foot [RFt ]",
+        "R_Toe0": "NPC R Toe0 [RToe]"
+    },
+    "finger_bones": {
+        "_comment": "Finger bones - XPMSSE has full finger support",
+        "L_Finger0_1": "NPC L Finger00 [LF00]",
+        "L_Finger0_2": "NPC L Finger01 [LF01]",
+        "L_Finger0_3": "NPC L Finger02 [LF02]",
+        "L_Finger1_1": "NPC L Finger10 [LF10]",
+        "L_Finger1_2": "NPC L Finger11 [LF11]",
+        "L_Finger1_3": "NPC L Finger12 [LF12]",
+        "L_Finger2_1": "NPC L Finger20 [LF20]",
+        "L_Finger2_2": "NPC L Finger21 [LF21]",
+        "L_Finger2_3": "NPC L Finger22 [LF22]",
+        "L_Finger3_1": "NPC L Finger30 [LF30]",
+        "L_Finger3_2": "NPC L Finger31 [LF31]",
+        "L_Finger3_3": "NPC L Finger32 [LF32]",
+        "L_Finger4_1": "NPC L Finger40 [LF40]",
+        "L_Finger4_2": "NPC L Finger41 [LF41]",
+        "L_Finger4_3": "NPC L Finger42 [LF42]",
+        "R_Finger0_1": "NPC R Finger00 [RF00]",
+        "R_Finger0_2": "NPC R Finger01 [RF01]",
+        "R_Finger0_3": "NPC R Finger02 [RF02]",
+        "R_Finger1_1": "NPC R Finger10 [RF10]",
+        "R_Finger1_2": "NPC R Finger11 [RF11]",
+        "R_Finger1_3": "NPC R Finger12 [RF12]",
+        "R_Finger2_1": "NPC R Finger20 [RF20]",
+        "R_Finger2_2": "NPC R Finger21 [RF21]",
+        "R_Finger2_3": "NPC R Finger22 [RF22]",
+        "R_Finger3_1": "NPC R Finger30 [RF30]",
+        "R_Finger3_2": "NPC R Finger31 [RF31]",
+        "R_Finger3_3": "NPC R Finger32 [RF32]",
+        "R_Finger4_1": "NPC R Finger40 [RF40]",
+        "R_Finger4_2": "NPC R Finger41 [RF41]",
+        "R_Finger4_3": "NPC R Finger42 [RF42]"
+    },
+    "weapon_bones": {
+        "_comment": "Weapon attachment points",
+        "L_WeaponHand": "WEAPON",
+        "R_WeaponHand": "WeaponRight",
+        "L_ShieldHand": "SHIELD",
+        "L_WeaponBack": "WeaponBackLeft",
+        "R_WeaponBack": "WeaponBackRight"
+    },
+    "xpmsse_extra_bones": {
+        "_comment": "XPMSSE-specific bones that have no Elden Ring equivalent (for reference)",
+        "bones": [
+            "NPC COM [COM ]",
+            "WeaponDagger",
+            "WeaponDaggerLeft",
+            "WeaponAxe",
+            "WeaponMace",
+            "WeaponSword",
+            "WeaponSwordLeft",
+            "WeaponBackAxeMace",
+            "WeaponBackSword",
+            "WeaponBackSwordLeft",
+            "WeaponBow",
+            "QUIVER",
+            "WeaponCrossBow",
+            "WeaponStaff",
+            "WeaponStaffLeft",
+            "HDT Tail Bone01",
+            "HDT Tail Bone02",
+            "HDT Tail Bone03",
+            "NPC L MagicNode [LMag]",
+            "NPC R MagicNode [RMag]"
+        ]
+    },
+    "elden_ring_unmapped_bones": {
+        "_comment": "Elden Ring bones with no direct Skyrim equivalent - need manual handling",
+        "bones": [
+            "Throw_Target",
+            "EyeTracking_L",
+            "EyeTracking_R",
+            "SFX_Root",
+            "SFX_DmyPoly_*",
+            "A_*",
+            "StyleRoot",
+            "RagdollGravity"
+        ],
+        "fallback_strategy": "Map to nearest parent bone or ignore if cosmetic-only"
+    },
+    "transform_adjustments": {
+        "_comment": "Required transform corrections due to skeleton pose differences",
+        "global_scale": 1.0,
+        "notes": [
+            "Elden Ring uses Y-up coordinate system, Skyrim uses Z-up - rotation correction needed",
+            "Elden Ring character is approximately 1.7m, Skyrim SE default is approximately 1.85m",
+            "Root motion extraction may differ - CCW uses root motion for dodge/movement",
+            "Elden Ring pelvis height differs from Skyrim - adjustment needed to prevent floating/sinking"
+        ],
+        "axis_conversion": {
+            "from": "Y-up (Elden Ring)",
+            "to": "Z-up (Skyrim SE)",
+            "rotation_correction_degrees": {
+                "x": -90,
+                "y": 0,
+                "z": 0
+            }
+        }
+    }
+}
